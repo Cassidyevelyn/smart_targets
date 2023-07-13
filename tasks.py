@@ -1,4 +1,5 @@
 # SMART Targets.
+
 # Task 1:
 # Create a variable and assign it the value of “hello”
 # Use an if statement to check if the variable is equal to hello, and if it is print”Hey there!”
@@ -11,12 +12,21 @@ if greeting == "hello":
 # Access and print out the value held under type from the dictionary just created
 shoe_dictionary = {"brand": "nike", "type": "shoe"}
 print(shoe_dictionary["type"])
+#-------------------------------------------------------
+
 
 # Task 2:
 # Create a list of numbers from 1 to 10
+numbers = list(range(1, 11))
 # Using a loop add two to each number
+for i in range(len(numbers)):
+    numbers[i] += 2
+
 # Using a loop print out each number in the list
-	
+for number in numbers:
+    print(number)
+
+
 # Task 3:
 # Create a person class with the properties of  name (str), wallet (int). And a  shopping list (List) that starts off empty
 # Write  methods to add and remove items from the shopping list

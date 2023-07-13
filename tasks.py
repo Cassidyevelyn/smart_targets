@@ -10,7 +10,11 @@ if greeting == "hello":
 
 # Create a dictionary with the keys of “brand” with the value of “nike” and the key of “type” and the value of “shoe”.
 # Access and print out the value held under type from the dictionary just created
-shoe_dictionary = {"brand": "nike", "type": "shoe"}
+shoe_dictionary = {
+    "brand": "nike", 
+    "type": "shoe"
+    }
+
 print(shoe_dictionary["type"])
 #-------------------------------------------------------
 
@@ -29,8 +33,28 @@ for number in numbers:
 
 # Task 3:
 # Create a person class with the properties of  name (str), wallet (int). And a  shopping list (List) that starts off empty
+class Person:
+    def __init__(self, name, wallet):
+        self.name = name
+        self.wallet = wallet
+        self.shopping_list = []
+
+
 # Write  methods to add and remove items from the shopping list
+
+    def add_item_to_list(self, shopping_list_item):
+        self.shopping_list.append(shopping_list_item)
+        
+
+    def remove_item_from_list(self, shopping_list_item):
+        self.shopping_list.remove(shopping_list_item)
+
+
 # Write a method called `print_shopping_list` to print out each item in the shopping list (using a loop)
+    def print_shopping_list(self):
+        for shopping_list_item in self.shopping_list:
+            print(shopping_list_item)
+
 # Task 4:
 # Create an instance of the person class
 # Add a string of “banana” to the shopping list of that person
@@ -44,4 +68,3 @@ if greeting == "hello":
     print("Hey there!")
 
 
- 

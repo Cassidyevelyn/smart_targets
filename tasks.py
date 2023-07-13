@@ -57,14 +57,19 @@ class Person:
 
 # Task 4:
 # Create an instance of the person class
+person_1 = Person("Wanda", 100)
+
 # Add a string of “banana” to the shopping list of that person
+person_1.add_item_to_list("banana")
+
 # Add a string of “soap” to the shopping list of that person
+person_1.add_item_to_list("soap")
 # Print out the ‘name’ property of the person
+print(person_1.name)
 # Call the person’s method to print out the shopping list.
+print(person_1.shopping_list)
 # Task 5 :
 # Try the lab with scaffold as a homework
-greeting = "hello"
-if greeting == "hello":
-    print("Hey there!")
+
 
 

@@ -7,6 +7,7 @@
 # and then finally write up the room class
 
 class Song:
-    def __init__(self, name, band_name)
-        self.name = name
-        self.band_name = band_name
+    def __init__(self, title, album):
+        self.title = title
+        self.album = album
+        

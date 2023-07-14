@@ -12,7 +12,7 @@ class TestSong(unittest.TestCase):
 
     def test_song_has_artist(self):
         song = Song("Highway To Hell", "AC/DC")
-        self.assertEqual("AC/DC", self.song.artist)
+        self.assertEqual("AC/DC", self.song.album)
 
     @unittest.skip("delete this line to run the test")
     def test_equals_returns_true(self):

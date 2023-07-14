@@ -15,23 +15,23 @@ class TestGuest(unittest.TestCase):
         song = Song("Ace of Spades", "Motorhead")
         self.guest = Guest("Jack", 20, song)
 
-    @unittest.skip("delete this line to run the test")
+    
     def test_guest_has_name(self):
         self.assertEqual("Jack", self.guest.name)
 
-    @unittest.skip("delete this line to run the test")
+# @unittest.skip("delete this line to run the test")
     def test_guest_has_cash(self):
         self.assertEqual(20, self.guest.cash)
 
-    @unittest.skip("delete this line to run the test")
+# @unittest.skip("delete this line to run the test")
     def test_guest_has_favourite_song(self):
         self.assertEqual("Ace of Spades", self.guest.favourite_song.title)
 
-    @unittest.skip("delete this line to run the test")
-    def test_guest_can_change_favourite_song(self):
-        song = Song("The Clansman", "Iron Maiden")
-        self.guest.favourite_song = song
-        self.assertEqual("The Clansman", self.guest.favourite_song.title)
+# @unittest.skip("delete this line to run the test")
+        def test_guest_can_change_favourite_song(self):
+            song = Song("The Clansman", "Iron Maiden")
+            self.guest.favourite_song = song
+            self.assertEqual("The Clansman", self.guest.favourite_song.title)
 
     @unittest.skip("delete this line to run the test")
     def test_guest_can_afford_10(self):

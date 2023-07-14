@@ -33,19 +33,19 @@ class TestGuest(unittest.TestCase):
             self.guest.favourite_song = song
             self.assertEqual("The Clansman", self.guest.favourite_song.title)
 
-    @unittest.skip("delete this line to run the test")
+   # @unittest.skip("delete this line to run the test")
     def test_guest_can_afford_10(self):
         self.assertEqual(True, self.guest.can_afford(10))
 
-    @unittest.skip("delete this line to run the test")
+   # @unittest.skip("delete this line to run the test")
     def test_guest_can_afford_20(self):
         self.assertEqual(True, self.guest.can_afford(20))
 
-    @unittest.skip("delete this line to run the test")
+   # @unittest.skip("delete this line to run the test")
     def test_guest_cannot_afford_30(self):
         self.assertEqual(False, self.guest.can_afford(30))
 
-    @unittest.skip("delete this line to run the test")
+   # @unittest.skip("delete this line to run the test")
     def test_guest_can_pay_amount(self):
         self.guest.pay(10)
         self.assertEqual(10, self.guest.cash)
@@ -55,7 +55,7 @@ class TestGuest(unittest.TestCase):
         result = self.guest.cheer(self.songs)
         self.assertEqual("Whoo Hoo!", result)
 
-    @unittest.skip("delete this line to run the test")
+    #@unittest.skip("delete this line to run the test")
     def test_guest_does_not_cheer_when_fave_song_not_in_list(self):
         song = Song("Back in Black", "AC/DC")
         guest = Guest("Tam", 2, song)

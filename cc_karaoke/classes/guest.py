@@ -8,7 +8,7 @@ class Guest:
         return self.cash >= amount
     
     def pay(self, amount):
-        if self.can_afford(amount):
+        if self.can_afford(amount): # (if statements are booleans), doesn't the can_afford func doesnt do this
             self.cash -= amount
     
     def cheer(self, songs):

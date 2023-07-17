@@ -28,10 +28,10 @@ class TestGuest(unittest.TestCase):
         self.assertEqual("Ace of Spades", self.guest.favourite_song.title)
 
 # @unittest.skip("delete this line to run the test")
-        def test_guest_can_change_favourite_song(self):
-            song = Song("The Clansman", "Iron Maiden")
-            self.guest.favourite_song = song
-            self.assertEqual("The Clansman", self.guest.favourite_song.title)
+    def test_guest_can_change_favourite_song(self):
+        song = Song("The Clansman", "Iron Maiden")
+        self.guest.favourite_song = song
+        self.assertEqual("The Clansman", self.guest.favourite_song.title)
 
    # @unittest.skip("delete this line to run the test")
     def test_guest_can_afford_10(self):

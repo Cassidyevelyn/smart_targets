@@ -22,32 +22,32 @@ class TestRoom(unittest.TestCase):
         self.winston = Guest("Winston", 10, self.song_2)
         self.room = Room("The Metal Room", 3, 10)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_room_has_name(self):
         self.assertEqual("The Metal Room", self.room.name)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_room_has_no_guests_at_start(self):
         self.assertEqual(0, self.room.number_of_guests())
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_room_has_no_songs_at_start(self):
         self.assertEqual(0, self.room.number_of_songs())
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_room_has_capacity(self):
         self.assertEqual(3, self.room.get_capacity())
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_room_till_starts_empty(self):
         self.assertEqual(0, self.room.till)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_can_add_to_till(self):
         self.room.add_to_till(10)
         self.assertEqual(10, self.room.till)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_can_check_in_guest(self):
         self.room.check_in_guest(self.victor)
         self.assertEqual(1, self.room.number_of_guests())
@@ -57,13 +57,13 @@ class TestRoom(unittest.TestCase):
         self.room.check_in_guests(self.guests)
         self.assertEqual(3, self.room.number_of_guests())
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_can_check_guest_out(self):
         self.room.check_in_guest(self.victor)
         self.room.check_out_guest(self.victor)
         self.assertEqual(0, self.room.number_of_guests())
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_can_add_song_to_room(self):
         song = Song("The Number of the Beast", "Iron Maiden")
         self.room.add_song(song)
@@ -95,12 +95,12 @@ class TestRoom(unittest.TestCase):
         self.room.check_in_guests(self.guests)
         self.assertEqual(1, self.room.number_of_guests())
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_room_has_fee(self):
         self.assertEqual(10, self.room.fee)
 
     @unittest.skip("delete this line to run the test")
-    def test_can_check_guest_if_cannot_afford_it(self):
+    def test_can_check_guest_if_can_afford_it(self):
         self.room.check_in_guest(self.winston)
         self.assertEqual(1, self.room.number_of_guests())
         self.assertEqual(10, self.room.till)
@@ -115,7 +115,7 @@ class TestRoom(unittest.TestCase):
         self.assertEqual(0, self.room.till)
         self.assertEqual(2, tam.cash)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_cheers_for_guests_fave_song(self):
         self.room.check_in_guest(self.winston)
         songs = self.songs
